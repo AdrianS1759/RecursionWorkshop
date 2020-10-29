@@ -1,5 +1,6 @@
 #include <iostream>
-// #include 
+
+int factorial(int n);
 
 using namespace std;
 
@@ -10,19 +11,21 @@ int main()
     cout << "Enter a positive integer: ";
     cin >> n;
 
-    cout << "Factorial of " << n << "is: " << factorial(n);
+    cout << "Factorial of " << n << " is: " << factorial(n) << cout;
+
+    return 0;
 }
 
 //Solves for the factorial of any input (n)
 int factorial(int n)
 {
     //Recursion case
-    if(___)
+    if(n > 1)
     {
         //Recursion happens here
-        return n * factorial(___);
+        return n * factorial(n-1);
     }
     //Base case
     else
-        return __;
+        return 1;
 }
