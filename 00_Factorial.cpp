@@ -17,12 +17,5 @@ int main()
 int factorial(int n)
 {
     //Recursion case
-    if(___)
-    {
-        //Recursion happens here
-        return n * factorial(___);
-    }
-    //Base case
-    else
-        return __;
+    return 1;
 }
